@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <header class="header">
         <div class="header__top">
             <div class="container">
@@ -19,9 +20,9 @@
                 </div>
                 <nav class="header__top_menu">
                     <a href="#" class="selected">Home</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Service</a>
-                    <a href="#">Contact</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#service">Service</a>
+                    <a href="#contact">Contact</a>
                 </nav>
             </div>
         </div>
@@ -34,16 +35,124 @@
             </div>
         </div>
     </header>
+
     <div class="scroller">
         <a href="#" class="scroller__button">
             <img src="images/icon-arrow-down.svg" alt="scroll down">
         </a>
     </div>
-    <main>
 
-    </main>
-    <footer>
+    <section id="blog" class="section container">
+        <h2 class="section__title">Blog</h2>
+        <div class="section__columns">
 
+            <article class="article">
+                <img src="images/photo1.png" alt="article heading">
+                <h3 class="article__heading">Lorem ipsum sit dolor</h3>
+                <p class="article__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo neque odio, vitae interdum turpis elementum sed.</p>
+                <a href="#" class="btn btn--primary btn-small">Read more</a>
+            </article>
+
+            <article class="article">
+                <img src="images/photo2.png" alt="article heading">
+                <h3 class="article__heading">Lorem ipsum sit dolor</h3>
+                <p class="article__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo neque odio, vitae interdum turpis elementum sed.</p>
+                <a href="#" class="btn btn--primary btn-small">Read more</a>
+            </article>
+
+            <article class="article">
+                <img src="images/photo3.png" alt="article heading">
+                <h3 class="article__heading">Lorem ipsum sit dolor</h3>
+                <p class="article__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo neque odio, vitae interdum turpis elementum sed.</p>
+                <a href="#" class="btn btn--primary btn-small">Read more</a>
+            </article>
+        </div>
+    </section>
+
+    <section id="service" class="section section__dark">
+        <div class="container">
+            <h2 class="section__title">Service</h2>
+            <div class="section__columns">
+
+                <article class="article">
+                    <img src="images/mini1.png" alt="article heading">
+                    <h3 class="article__heading">Lorem ipsum sit dolor</h3>
+                    <p class="article__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo neque odio, vitae interdum turpis elementum sed.</p>
+                    <a href="#" class="btn btn--primary btn-small">Read more</a>
+                </article>
+
+                <article class="article">
+                    <img src="images/mini2.png" alt="article heading">
+                    <h3 class="article__heading">Lorem ipsum sit dolor</h3>
+                    <p class="article__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo neque odio, vitae interdum turpis elementum sed.</p>
+                    <a href="#" class="btn btn--primary btn-small">Read more</a>
+                </article>
+
+                <article class="article">
+                    <img src="images/mini3.png" alt="article heading">
+                    <h3 class="article__heading">Lorem ipsum sit dolor</h3>
+                    <p class="article__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo neque odio, vitae interdum turpis elementum sed.</p>
+                    <a href="#" class="btn btn--primary btn-small">Read more</a>
+                </article>
+
+                <article class="article">
+                    <img src="images/mini4.png" alt="article heading">
+                    <h3 class="article__heading">Lorem ipsum sit dolor</h3>
+                    <p class="article__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo neque odio, vitae interdum turpis elementum sed.</p>
+                    <a href="#" class="btn btn--primary btn-small">Read more</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section container">
+        <h2 class="section__title">Contact</h2>
+        <div class="section__columns">
+            <div class="contact__image">
+                <img src="images/form-photo.png" alt="contact photo">
+            </div>
+            <div class="form">
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="Type your name">
+
+                <label for="email"></label>
+                <input type="text" id="email" placeholder="Type your email">
+
+                <label for="message"></label>
+                <textarea id="message" placeholder="Type your message" rows="6"></textarea>
+
+                <label for="agree">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</label>
+                <input type="checkbox" id="agree" value="I hearby give ...">
+
+                <input type="submit" value="Send" class="btn">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="header__top__logo">
+                <img alt="logo" src="images/icon.svg">
+                <span><span class="colored">CAR</span> SHARING</span>
+            </div>  <!--e: header__top__logo -->
+            <div class="footer__menu">
+                <ul>
+                   <li><a class="footer__selected" href="">Home page</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Share regulation</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Price</a></li>
+                    <li><a href="">Out fleet</a></li>
+                    <li><a href="">Our clients</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                <div>
+                    <p class="copyright">Copyright &copy; Coders Lab</p>
+                </div>
+            </div>  <!-- e: footer_menu -->
+        </div> <!-- e: container -->
     </footer>
 </body>
 </html>
